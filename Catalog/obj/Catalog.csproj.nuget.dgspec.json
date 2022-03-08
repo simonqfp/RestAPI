@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\NM8\\repos\\RestAPI\\Catalog\\Catalog.csproj": {}
+    "D:\\Development\\RestAPI\\Catalog\\Catalog.csproj": {}
   },
   "projects": {
-    "C:\\NM8\\repos\\RestAPI\\Catalog\\Catalog.csproj": {
+    "D:\\Development\\RestAPI\\Catalog\\Catalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\NM8\\repos\\RestAPI\\Catalog\\Catalog.csproj",
+        "projectUniqueName": "D:\\Development\\RestAPI\\Catalog\\Catalog.csproj",
         "projectName": "Catalog",
-        "projectPath": "C:\\NM8\\repos\\RestAPI\\Catalog\\Catalog.csproj",
-        "packagesPath": "C:\\Users\\TSY585\\.nuget\\packages\\",
-        "outputPath": "C:\\NM8\\repos\\RestAPI\\Catalog\\obj\\",
+        "projectPath": "D:\\Development\\RestAPI\\Catalog\\Catalog.csproj",
+        "packagesPath": "C:\\Users\\simon\\.nuget\\packages\\",
+        "outputPath": "D:\\Development\\RestAPI\\Catalog\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\TSY585\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\simon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.14.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -63,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
