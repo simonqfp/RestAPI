@@ -6,8 +6,6 @@ using MongoDB.Driver;
 
 namespace Catalog.Repositories
 {
-
-
     public class MongoDbItemsRepository : IItemsRepository
     {
         private const string databaseName = "Catalog";
