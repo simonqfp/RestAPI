@@ -1,4 +1,7 @@
 # RestAPI
+## Currently at:
+https://youtu.be/ZXdFisA_hOY?t=12784
+
 
 ## The full video
 https://youtu.be/ZXdFisA_hOY?t=9502
