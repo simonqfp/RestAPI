@@ -10,6 +10,10 @@ docker volume create --name=mongodata
 
 # mount and start start our MongoDb image
 docker run -d --rm --name mongo -p 27017:27017 -v mongodbdata:/data/db -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=Password123! mongo
+
+# mount and start MongoDB image using specific docker network
+docker run -d --rm --name mongo -p 27017:27017 -v mongodbdata:/data/db -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=Password123! mongo --network=net5tutorial
+
 #docker run -d --rm mongo -p 27017:27017 -v mongodbdata:/data/db mongo
 
 # open firewall for MongoDB port
@@ -24,3 +28,13 @@ dotnet user-secrets init
 dotnet user-secrets set MongoDbSettings:Password Password123!
 
 docker build -t catalog:v1 .
+
+docker network create net5tutorial
+
+# list docker metworks
+docker network ls
+
+# list available docker images
+docker images
+
+docker run -it --rm -p 8080:80 -e MongoDbSettings:Host=mongo -e MongoDbSettings:Password=Password123! --network=net5tutorial catalog:v1
