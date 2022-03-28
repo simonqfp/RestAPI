@@ -12,7 +12,7 @@ docker volume create --name=mongodata
 docker run -d --rm --name mongo -p 27017:27017 -v mongodbdata:/data/db -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=Password123! mongo
 
 # mount and start MongoDB image using specific docker network
-docker run -d --rm --name mongo -p 27017:27017 -v mongodbdata:/data/db -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=Password123! mongo --network=net5tutorial
+docker run -d --rm --name mongo -p 27017:27017 -v mongodbdata:/data/db -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=Password123! --network=net5tutorial mongo
 
 #docker run -d --rm mongo -p 27017:27017 -v mongodbdata:/data/db mongo
 
@@ -38,3 +38,15 @@ docker network ls
 docker images
 
 docker run -it --rm -p 8080:80 -e MongoDbSettings:Host=mongo -e MongoDbSettings:Password=Password123! --network=net5tutorial catalog:v1
+
+docker run -it --rm -p 8080:80 -e MongoDbSettings:Host=mongo -e MongoDbSettings:Password=Password123! --network=net5tutorial simonki73/catalog:v1
+
+kubectl config current-context
+
+kubectl create secret generic catalog-secrets --from-literal=mongodb-password='Password123!'
+
+kubectl apply -f .\catalog.yaml
+
+kubectl get deployments
+kubectl get pods
+kubectl logs catalog-deployment-79d7b6c5b9-7sr9r 

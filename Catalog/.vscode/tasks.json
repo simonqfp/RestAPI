@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Catalog.csproj",
+                "${workspaceFolder}/Catalog.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -23,7 +23,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Catalog.csproj",
+                "${workspaceFolder}/Catalog.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -36,7 +36,7 @@
             "args": [
                 "watch",
                 "run",
-                "${workspaceFolder}/Catalog.csproj",
+                "${workspaceFolder}/Catalog.Api.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -56,7 +56,7 @@
                 "pull": true
             },
             "netCore": {
-                "appProject": "${workspaceFolder}/Catalog.csproj"
+                "appProject": "${workspaceFolder}/Catalog.Api.csproj"
             }
         },
         {
@@ -72,7 +72,7 @@
                 "pull": true
             },
             "netCore": {
-                "appProject": "${workspaceFolder}/Catalog.csproj"
+                "appProject": "${workspaceFolder}/Catalog.Api.csproj"
             }
         },
         {
@@ -85,7 +85,7 @@
                 "os": "Windows"
             },
             "netCore": {
-                "appProject": "${workspaceFolder}/Catalog.csproj",
+                "appProject": "${workspaceFolder}/Catalog.Api.csproj",
                 "enableDebugging": true,
                 "configureSsl": false
             }
@@ -100,7 +100,7 @@
                 "os": "Windows"
             },
             "netCore": {
-                "appProject": "${workspaceFolder}/Catalog.csproj"
+                "appProject": "${workspaceFolder}/Catalog.Api.csproj"
             }
         }
     ]

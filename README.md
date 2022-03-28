@@ -1,6 +1,6 @@
 # RestAPI
 ## Currently at:
-https://youtu.be/ZXdFisA_hOY?t=12784
+https://youtu.be/ZXdFisA_hOY?t=16949
 
 
 ## The full video
@@ -12,6 +12,13 @@ https://www.youtube.com/watch?v=ZXdFisA_hOY&t=8823s
 
 ## Deployment with Docker
 https://youtu.be/ZXdFisA_hOY?t=10845
+
+## Kubernetes
+https://www.youtube.com/watch?v=ZXdFisA_hOY&t=10845s
+
+## Unit testing and TDD
+https://youtu.be/ZXdFisA_hOY?t=17788
+
 
 # Supplementary resources
 
