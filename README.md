@@ -1,6 +1,6 @@
 # RestAPI
 ## Currently at:
-https://youtu.be/ZXdFisA_hOY?t=16949
+https://youtu.be/ZXdFisA_hOY?t=18510
 
 
 ## The full video
@@ -18,7 +18,6 @@ https://www.youtube.com/watch?v=ZXdFisA_hOY&t=10845s
 
 ## Unit testing and TDD
 https://youtu.be/ZXdFisA_hOY?t=17788
-
 
 # Supplementary resources
 
