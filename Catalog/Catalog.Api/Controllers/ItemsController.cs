@@ -7,6 +7,9 @@ using System;
 using System.Linq;
 using Catalog.Api.Dtos;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
+
+
 
 namespace Catalog.Api.Controllers
 {
@@ -16,10 +19,12 @@ namespace Catalog.Api.Controllers
     {
 
         private readonly IItemsRepository repository;
+        private readonly ILogger logger;
 
-        public ItemsController(IItemsRepository repository)
+        public ItemsController(IItemsRepository repository, ILogger logger)
         {
             this.repository = repository;
+            this.logger = logger;
         }
 
 
@@ -43,6 +48,7 @@ namespace Catalog.Api.Controllers
             {
                 return NotFound();
             }
+            
             return item.AsDto();
         }
 

@@ -50,3 +50,10 @@ kubectl apply -f .\catalog.yaml
 kubectl get deployments
 kubectl get pods
 kubectl logs catalog-deployment-79d7b6c5b9-7sr9r 
+
+dotnet add reference ..\Catalog.Api\Catalog.Api.csproj
+
+dotnet test
+
+docker build -t simonki73/catalog/catalog v3 .
+docker images

@@ -5,7 +5,6 @@ D:\Development\RestAPI\Catalog\Catalog.Api\bin\Debug\net5.0\Catalog.Api.deps.jso
 D:\Development\RestAPI\Catalog\Catalog.Api\bin\Debug\net5.0\Catalog.Api.runtimeconfig.json
 D:\Development\RestAPI\Catalog\Catalog.Api\bin\Debug\net5.0\Catalog.Api.runtimeconfig.dev.json
 D:\Development\RestAPI\Catalog\Catalog.Api\bin\Debug\net5.0\Catalog.Api.dll
-D:\Development\RestAPI\Catalog\Catalog.Api\bin\Debug\net5.0\ref\Catalog.Api.dll
 D:\Development\RestAPI\Catalog\Catalog.Api\bin\Debug\net5.0\Catalog.Api.pdb
 D:\Development\RestAPI\Catalog\Catalog.Api\bin\Debug\net5.0\HealthChecks.MongoDb.dll
 D:\Development\RestAPI\Catalog\Catalog.Api\bin\Debug\net5.0\DnsClient.dll
@@ -38,7 +37,6 @@ D:\Development\RestAPI\Catalog\Catalog.Api\bin\Debug\net5.0\runtimes\win\native\
 D:\Development\RestAPI\Catalog\Catalog.Api\bin\Debug\net5.0\runtimes\linux\native\libmongocrypt.so
 D:\Development\RestAPI\Catalog\Catalog.Api\bin\Debug\net5.0\runtimes\osx\native\libmongocrypt.dylib
 D:\Development\RestAPI\Catalog\Catalog.Api\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
-D:\Development\RestAPI\Catalog\Catalog.Api\obj\Debug\net5.0\Catalog.Api.csproj.AssemblyReference.cache
 D:\Development\RestAPI\Catalog\Catalog.Api\obj\Debug\net5.0\Catalog.Api.GeneratedMSBuildEditorConfig.editorconfig
 D:\Development\RestAPI\Catalog\Catalog.Api\obj\Debug\net5.0\Catalog.Api.AssemblyInfoInputs.cache
 D:\Development\RestAPI\Catalog\Catalog.Api\obj\Debug\net5.0\Catalog.Api.AssemblyInfo.cs
@@ -53,3 +51,5 @@ D:\Development\RestAPI\Catalog\Catalog.Api\obj\Debug\net5.0\Catalog.Api.dll
 D:\Development\RestAPI\Catalog\Catalog.Api\obj\Debug\net5.0\ref\Catalog.Api.dll
 D:\Development\RestAPI\Catalog\Catalog.Api\obj\Debug\net5.0\Catalog.Api.pdb
 D:\Development\RestAPI\Catalog\Catalog.Api\obj\Debug\net5.0\Catalog.Api.genruntimeconfig.cache
+D:\Development\RestAPI\Catalog\Catalog.Api\obj\Debug\net5.0\Catalog.Api.csproj.AssemblyReference.cache
+D:\Development\RestAPI\Catalog\Catalog.Api\obj\Debug\net5.0\refint\Catalog.Api.dll

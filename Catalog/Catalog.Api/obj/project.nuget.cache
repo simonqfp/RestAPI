@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WN8hAb70U+94M7n/xmoDgtkwB/MpGReJ6h4n754QQ0ZSTjLP96Rv6oGW+OzvQxzOAQKHjg1aHTP4oil5Hc+fng==",
+  "dgSpecHash": "iLnLgH0ajEGs6SI52DeUbrE6PrTy4oBsywdad1juabWUROvlBkOH0IsRvnH6BEBMrBd/EHW8kIILtIqb4FUHEw==",
   "success": true,
-  "projectFilePath": "D:\\Development\\RestAPI\\Catalog\\Catalog.Api\\Catalog.Api.csproj",
+  "projectFilePath": "d:\\Development\\RestAPI\\Catalog\\Catalog.Api\\Catalog.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\simon\\.nuget\\packages\\aspnetcore.healthchecks.mongodb\\6.0.2\\aspnetcore.healthchecks.mongodb.6.0.2.nupkg.sha512",
     "C:\\Users\\simon\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
@@ -13,7 +13,7 @@
     "C:\\Users\\simon\\.nuget\\packages\\microsoft.extensions.diagnostics.healthchecks.abstractions\\6.0.2\\microsoft.extensions.diagnostics.healthchecks.abstractions.6.0.2.nupkg.sha512",
     "C:\\Users\\simon\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0\\microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\simon\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\6.0.0\\microsoft.extensions.hosting.abstractions.6.0.0.nupkg.sha512",
-    "C:\\Users\\simon\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\simon\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\microsoft.extensions.logging.abstractions.6.0.1.nupkg.sha512",
     "C:\\Users\\simon\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\simon\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\simon\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
