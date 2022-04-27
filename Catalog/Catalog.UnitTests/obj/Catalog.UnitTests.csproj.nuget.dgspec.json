@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Development\\RestAPI\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj": {}
+    "D:\\Development\\RestAPI\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj": {}
   },
   "projects": {
-    "d:\\Development\\RestAPI\\Catalog\\Catalog.Api\\Catalog.Api.csproj": {
+    "D:\\Development\\RestAPI\\Catalog\\Catalog.Api\\Catalog.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Development\\RestAPI\\Catalog\\Catalog.Api\\Catalog.Api.csproj",
+        "projectUniqueName": "D:\\Development\\RestAPI\\Catalog\\Catalog.Api\\Catalog.Api.csproj",
         "projectName": "Catalog.Api",
-        "projectPath": "d:\\Development\\RestAPI\\Catalog\\Catalog.Api\\Catalog.Api.csproj",
+        "projectPath": "D:\\Development\\RestAPI\\Catalog\\Catalog.Api\\Catalog.Api.csproj",
         "packagesPath": "C:\\Users\\simon\\.nuget\\packages\\",
-        "outputPath": "d:\\Development\\RestAPI\\Catalog\\Catalog.Api\\obj\\",
+        "outputPath": "D:\\Development\\RestAPI\\Catalog\\Catalog.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\simon\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -79,14 +79,14 @@
         }
       }
     },
-    "d:\\Development\\RestAPI\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj": {
+    "D:\\Development\\RestAPI\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Development\\RestAPI\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
+        "projectUniqueName": "D:\\Development\\RestAPI\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
         "projectName": "Catalog.UnitTests",
-        "projectPath": "d:\\Development\\RestAPI\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
+        "projectPath": "D:\\Development\\RestAPI\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
         "packagesPath": "C:\\Users\\simon\\.nuget\\packages\\",
-        "outputPath": "d:\\Development\\RestAPI\\Catalog\\Catalog.UnitTests\\obj\\",
+        "outputPath": "D:\\Development\\RestAPI\\Catalog\\Catalog.UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\simon\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -103,8 +103,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "d:\\Development\\RestAPI\\Catalog\\Catalog.Api\\Catalog.Api.csproj": {
-                "projectPath": "d:\\Development\\RestAPI\\Catalog\\Catalog.Api\\Catalog.Api.csproj"
+              "D:\\Development\\RestAPI\\Catalog\\Catalog.Api\\Catalog.Api.csproj": {
+                "projectPath": "D:\\Development\\RestAPI\\Catalog\\Catalog.Api\\Catalog.Api.csproj"
               }
             }
           }

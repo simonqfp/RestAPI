@@ -38,7 +38,7 @@ namespace Catalog.UnitTests
             var result = await controller.GetItemAsync(Guid.NewGuid());
 
             // assert()
-            result.Result.Should().BeOfType(<NotFoundResult>;
+            result.Result.Should().BeOfType<NotFoundResult>();
         }
 
         [Fact]
