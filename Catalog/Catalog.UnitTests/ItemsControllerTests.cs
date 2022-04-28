@@ -62,6 +62,81 @@ namespace Catalog.UnitTests
                 options => options.ComparingByMembers<ItemsControllerTests>());
 
         }
+
+        [Fact]
+        public async Task GetItemsAsync_WithExistingItem_ReturnsAlItems()
+        {
+            // arrange
+            var expectedItems = new[] { CreateRandomItem(), CreateRandomItem(), CreateRandomItem() };
+            repositoryStub.Setup(repo => repo.GetItemsAsync())
+                .ReturnsAsync(expectedItems);
+
+            var controller = new ItemsController(repositoryStub.Object, loggerStub.Object);
+
+            // act
+            var actualItems = await controller.GetItemsAsync();
+
+            // assert
+            actualItems.Should().BeEquivalentTo(
+                expectedItems,
+                options => options.ComparingByMembers<Item>());
+        }
+
+        [Fact]
+        public async Task CreateItemAsync_WithItemToCreate_ReturnsCreatedItem()
+        {
+            // arrange
+            var itemToCreate = new CreateItemDto()
+            {
+                Name = Guid.NewGuid().ToString(),
+                Price = rand.Next(1000)
+            };
+
+            var controller = new ItemsController(repositoryStub.Object, loggerStub.Object);
+
+            // act
+            var result = await controller.CreateItemAsync(itemToCreate);
+
+            // assert
+            var createdItem = (result.Result as CreatedAtActionResult).Value as ItemDto;
+
+            itemToCreate.Should().BeEquivalentTo(
+                createdItem,
+                options => options.ComparingByMembers<ItemDto>().ExcludingMissingMembers()
+            );
+
+            createdItem.Id.Should().NotBeEmpty();
+            createdItem.CreatedDate.Should().BeCloseTo(DateTimeOffset.UtcNow, TimeSpan.FromMilliseconds(1000));
+        }
+
+
+        [Fact]
+        public async Task UpdateItemAsync_WithExistingItem_ReturnNoContent()
+        {
+            // arrange
+            var existingItem = CreateRandomItem();
+
+            repositoryStub.Setup(repo => repo.GetItemAsync(It.IsAny<Guid>()))
+                .ReturnsAsync(existingItem);
+
+            var itemId = existingItem.Id;
+            var itemToUpdate = new UpdateItemDto()
+            {
+                Name = Guid.NewGuid().ToString(),
+                Price = existingItem.Price + 3
+
+            };
+
+            var controller = new ItemsController(repositoryStub.Object, loggerStub.Object);
+
+            // act
+            var result = await controller.UpdateItemAsync(itemId, itemToUpdate);
+
+            // assert
+            result.Should().BeOfType <NoContentResult>();
+        }
+
+
         private Item CreateRandomItem()
         {
             return new Item
