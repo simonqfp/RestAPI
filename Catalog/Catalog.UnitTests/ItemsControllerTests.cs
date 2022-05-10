@@ -21,7 +21,7 @@ namespace Catalog.UnitTests
         private readonly Random rand = new Random();
 
         private readonly Mock<IItemsRepository> repositoryStub = new();
-        private readonly Mock<ILogger<ItemsController>> loggerStub = new();
+        private readonly Mock<ILogger<Logger>> loggerStub = new();
 
         [Fact]
         public async Task GetItemAsync_WithUnexistingItem_ReturnsNotFound()

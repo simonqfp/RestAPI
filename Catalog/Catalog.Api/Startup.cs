@@ -49,10 +49,18 @@ namespace Catalog.Api
             });
 
             services.AddSingleton<IItemsRepository, MongoDbItemsRepository>();
+            services.AddSingleton<Logger>();
             services.AddControllers(options =>
             {
                 options.SuppressAsyncSuffixInActionNames = false;
             });
+
+            services.AddLogging(config =>
+            {
+                config.AddDebug();
+                config.AddConsole();
+            });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Catalog", Version = "v1" });

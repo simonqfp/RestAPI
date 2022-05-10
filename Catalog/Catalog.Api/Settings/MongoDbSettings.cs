@@ -15,7 +15,9 @@ namespace Catalog.Api.Settings
         {
             get
             {
-                return $"mongodb://{User}:{Password}@{Host}:{Port}";
+                return $"mongodb+srv://{User}:{Password}@{Host}";
+
+
             }
         }
     }
