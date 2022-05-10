@@ -57,9 +57,7 @@ namespace Catalog.UnitTests
 
             // assert
             // FluentAssertions
-            result.Value.Should().BeEquivalentTo(
-                expectedItem,
-                options => options.ComparingByMembers<ItemsControllerTests>());
+            result.Value.Should().BeEquivalentTo(expectedItem);
 
         }
 
@@ -77,20 +75,17 @@ namespace Catalog.UnitTests
             var actualItems = await controller.GetItemsAsync();
 
             // assert
-            actualItems.Should().BeEquivalentTo(
-                expectedItems,
-                options => options.ComparingByMembers<Item>());
+            actualItems.Should().BeEquivalentTo(expectedItems);
         }
 
         [Fact]
         public async Task CreateItemAsync_WithItemToCreate_ReturnsCreatedItem()
         {
             // arrange
-            var itemToCreate = new CreateItemDto()
-            {
-                Name = Guid.NewGuid().ToString(),
-                Price = rand.Next(1000)
-            };
+            var itemToCreate = new CreateItemDto(
+                Guid.NewGuid().ToString(),
+                Guid.NewGuid().ToString(),
+                rand.Next(1000));
 
             var controller = new ItemsController(repositoryStub.Object, loggerStub.Object);
 
@@ -111,7 +106,7 @@ namespace Catalog.UnitTests
 
 
         [Fact]
-        public async Task UpdateItemAsync_WithExistingItem_ReturnNoContent()
+        public async Task UpdateItemAsync_WithExistingItem_ReturnsNoContent()
         {
             // arrange
             var existingItem = CreateRandomItem();
@@ -120,12 +115,11 @@ namespace Catalog.UnitTests
                 .ReturnsAsync(existingItem);
 
             var itemId = existingItem.Id;
-            var itemToUpdate = new UpdateItemDto()
-            {
-                Name = Guid.NewGuid().ToString(),
-                Price = existingItem.Price + 3
+            var itemToUpdate = new UpdateItemDto(
+                Guid.NewGuid().ToString(),
+                Guid.NewGuid().ToString(),
+                existingItem.Price + 3);
 
-            };
 
             var controller = new ItemsController(repositoryStub.Object, loggerStub.Object);
 
@@ -133,7 +127,25 @@ namespace Catalog.UnitTests
             var result = await controller.UpdateItemAsync(itemId, itemToUpdate);
 
             // assert
-            result.Should().BeOfType <NoContentResult>();
+            result.Should().BeOfType<NoContentResult>();
+        }
+
+        [Fact]
+        public async Task DeleteItemAsync_WithExistingItem_ReturnsNoContent()
+        {
+            // arrange
+            var existingItem = CreateRandomItem();
+
+            repositoryStub.Setup(repo => repo.GetItemAsync(It.IsAny<Guid>()))
+                .ReturnsAsync(existingItem);
+
+            var controller = new ItemsController(repositoryStub.Object, loggerStub.Object);
+
+            // act
+            var result = await controller.DeleteItemAsync(existingItem.Id);
+
+            // assert
+            result.Should().BeOfType<NoContentResult>();
         }
 
 

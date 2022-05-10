@@ -41,6 +41,7 @@ namespace Catalog.Api
 
             var mongoDbSettings = Configuration.GetSection(nameof(MongoDbSettings)).Get<MongoDbSettings>();
 
+
             services.AddSingleton<IMongoClient>(serviceProvider =>
             {
 
