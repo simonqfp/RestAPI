@@ -1,15 +1,15 @@
 using System;
 
-namespace Catalog.Entities{
-    public record  Item {
-        public Guid Id {get; init;}
+namespace Catalog.Entities
+{
+    public record Item
+    {
+        public Guid Id { get; init; }
 
-        public string Name {get; init;}
+        public string Name { get; init; }
 
-        public decimal Price {get; set;}
+        public decimal Price { get; set; }
 
-        public DateTimeOffset CreatedDate {get; init;}
-
-        
+        public DateTimeOffset CreatedDate { get; init; }
     }
 }

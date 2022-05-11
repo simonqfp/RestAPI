@@ -576,11 +576,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Development\\RestAPI\\Catalog\\Catalog.csproj",
+      "projectUniqueName": "D:\\Development\\RestAPI_nodocker\\RestAPI\\Catalog\\Catalog.csproj",
       "projectName": "Catalog",
-      "projectPath": "D:\\Development\\RestAPI\\Catalog\\Catalog.csproj",
+      "projectPath": "D:\\Development\\RestAPI_nodocker\\RestAPI\\Catalog\\Catalog.csproj",
       "packagesPath": "C:\\Users\\simon\\.nuget\\packages\\",
-      "outputPath": "D:\\Development\\RestAPI\\Catalog\\obj\\",
+      "outputPath": "D:\\Development\\RestAPI_nodocker\\RestAPI\\Catalog\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\simon\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -636,7 +636,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

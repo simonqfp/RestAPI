@@ -1,11 +1,10 @@
-
-using Microsoft.AspNetCore.Mvc;
-using Catalog.Repositories;
-using System.Collections.Generic;
-using Catalog.Entities;
-using System;
-using System.Linq;
 using Catalog.Dtos;
+using Catalog.Entities;
+using Catalog.Repositories;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Catalog.Controllers
@@ -14,14 +13,12 @@ namespace Catalog.Controllers
     [Route("items")]
     public class ItemsController : ControllerBase
     {
-
         private readonly IItemsRepository repository;
 
         public ItemsController(IItemsRepository repository)
         {
             this.repository = repository;
         }
-
 
         // GET /items
         [HttpGet]
@@ -30,7 +27,6 @@ namespace Catalog.Controllers
             var items = (await repository.GetItemsAsync())
                         .Select(item => item.AsDto());
             return items;
-
         }
 
         // GET /itms/{id}
@@ -56,7 +52,6 @@ namespace Catalog.Controllers
                 Name = itemDto.Name,
                 Price = itemDto.Price,
                 CreatedDate = DateTimeOffset.UtcNow
-
             };
 
             await repository.CreateItemAsync(item);
@@ -97,6 +92,5 @@ namespace Catalog.Controllers
             await repository.DeleteItemAsync(id);
             return NoContent();
         }
-
     }
 }

@@ -22,3 +22,5 @@ netsh advfirewall firewall add rule name="Allowing mongod" dir=in action=allow p
 dotnet user-secrets init
 
 dotnet user-secrets set MongoDbSettings:Password Password123!
+
+dotnet user-secrets list

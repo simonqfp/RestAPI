@@ -1,9 +1,7 @@
 namespace Catalog.Settings
 {
-
     public class MongoDbSettings
     {
-
         public string Host { get; set; }
         public string Port { get; set; }
 
@@ -15,9 +13,8 @@ namespace Catalog.Settings
         {
             get
             {
-                return $"mongodb://{User}:{Password}@{Host}:{Port}";
+                return $"mongodb+srv://{User}:{Password}@{Host}:{Port}";
             }
         }
     }
-
 }

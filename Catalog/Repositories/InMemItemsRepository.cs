@@ -6,8 +6,6 @@ using System.Threading.Tasks;
 
 namespace Catalog.Repositories
 {
-
-
     public class InMemItemsRepository : IItemsRepository
     {
         private readonly List<Item> items = new()
@@ -52,8 +50,6 @@ namespace Catalog.Repositories
             items.Add(item);
             await Task.CompletedTask;
         }
-
-
 
         public async Task UpdateItemAsync(Item item)
         {
